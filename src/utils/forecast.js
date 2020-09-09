@@ -13,7 +13,7 @@ const forecast = (longitude, latitude, callback) => {
         }
         else {
             callback(undefined, body.current.weather_descriptions[0]+". It is currently "+body.current.temperature +
-            " degrees out. There is " + body.current.precip+"% chance of rain.")
+            " degrees out. There is " + body.current.precip+"% chance of rain. The humidity is " + body.current.humidity + ".")
             //console.log(response.body.current)
         }
     })
